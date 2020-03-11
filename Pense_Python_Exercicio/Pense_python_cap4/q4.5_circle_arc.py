@@ -1,21 +1,25 @@
 import turtle
-# Escreva uma função chamada circle que use o turtle, t e um raio r como parâmetros e desenhe um círculo aproximado ao chamar polygon com um comprimento e número de lados adequados. Teste a sua função com uma série de valores de r.Dica: descubra a circunferência do círculo e certifique-se de que length * n = circumference.
+# Faça uma versão mais geral do circle chamada arc, que receba um parâmetro adicional de angle, para determinar qual fração do círculo deve ser desenhada. angle está em unidades de graus, então quando angle=360, o arc deve desenhar um círculo completo.
 
 bob = turtle.Turtle()
 pi = 3.14
-def polygon(t, n, a):
+def polygon(t, n, ang_final):
     length = 1
-    print( t )
-    arc = 360/a  
-    count =  int( n / a )
-    for i in range( count ):
+    print( t )     
+    for i in range( n ):
+        if( i == ang_final):
+            break
         t.fd(length)
         t.lt( 360 / n  )
     turtle.mainloop()
-      
 
 def arc( t, r, a):
-    n = int(r * 2 * pi)
-    polygon(t, n, a)
+    n = int(2 * pi * r )
+    ang_final = (n * a ) // 360
+    print(ang_final)
+    print(n)
+    polygon(t, n, ang_final)
 
-arc( bob, 50, 180 )
+arc( bob, 50, 360)
+
+
