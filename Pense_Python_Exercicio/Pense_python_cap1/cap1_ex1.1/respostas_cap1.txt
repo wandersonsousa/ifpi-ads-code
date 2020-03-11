@@ -1,0 +1,40 @@
+Primeira Questão
+Em uma instrução print, o que acontece se você omitir um dos parênteses ou ambos?
+
+    #print(
+    - Erro de sintaxe: o interpretador falha ao analisar o final da linha(EOF)
+    #print
+    - O interpretador continua normalmente, apenas retorna o tipo, que é uma função
+
+
+(Segunda Questão) 
+Se estiver tentando imprimir uma string, o que acontece se omitir uma das aspas ou ambas?
+
+    #print("string)
+    - Erro de sintaxe: o interpretador falha ao analisar o final da linha(EOF)
+    #print(string)
+    - O interpretador analisa o caso como a chamada de uma variável, e busca uma de mesmo nome, porém no caso falha, e retorna um NameError
+
+
+(Terceira Questão)
+Você pode usar um sinal de menos para fazer um número negativo como -2. O que acontece se puser um sinal de mais antes de um número? E se escrever assim: 2++2?
+
+    #print( +1 )
+    - O interpretador lê como um número inteiro normalmente
+    #print( 1++1 )
+    - O interpretador realiza a soma dos dois números
+
+
+(Quarta Questão)
+A notação matemática, zeros à esquerda são aceitáveis, como em 02. O que acontece se você tentar usar isso no Python?
+
+    #print(02)
+    - O programa retorna um erro de sintaxe, de token inválido
+
+
+(Quinta Questão)
+O que acontece se você tiver dois valores sem nenhum operador entre eles?
+
+    # print(2 2)
+    - Erro de sintaxe inválida
+

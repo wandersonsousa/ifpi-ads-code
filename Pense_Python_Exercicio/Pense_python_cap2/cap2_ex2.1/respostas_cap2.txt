@@ -1,0 +1,38 @@
+(Primeira Questão)
+Vimos que n = 42 é legal. E 42 = n?
+
+    #42 = n
+    -Retorna erro de sintaxe porque não segue as regras padrões do python pra criação de varáveis
+
+
+(Segunda Questão)
+Ou x = y = 1?
+
+    #x = y = 1
+    - Nesse caso o valor inteiro 1 vai ser atribuido as duas variaveis sem problema, essa é uma das formas de instância de variáveis que o interpretador python suporta
+
+
+(Terceira Questão) 
+Em algumas linguagens, cada instrução termina em um ponto e vírgula ;. O que acontece se você puser um ponto e vírgula no fim de uma instrução no Python?
+
+    #print("oi");
+    - O programa roda normalmente,o ponto e vírgula é opcional, porém a prática do mesmo não é recomendada em python, pois o interpretador trabalha com a separação de comandos por meio da identação, então não faz sentido o ;.
+
+
+(Quarta Questão)
+E se puser um ponto no fim de uma instrução?
+
+    #print("oi").
+    - Retorna um erro de sintaxe por conta do .
+
+
+(Quinta Questão)
+Em notação matemática é possível multiplicar x e y desta forma: xy. O que acontece se você tentar fazer o mesmo no Python?
+
+    print(xy)
+    -o compilador vai interpretar o xy como uma variável única e vai retornar um NameError que diz xy não está definido
+
+
+
+
+
