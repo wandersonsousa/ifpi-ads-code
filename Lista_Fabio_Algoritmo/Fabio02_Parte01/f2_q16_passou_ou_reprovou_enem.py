@@ -28,7 +28,7 @@ def passou_na_prova(media):
         return False
 
 
-def passou_no_exame(nt_exame, media_notas):
+def passou_no_exame( nt_exame, media_notas ):
     media_final = media_nt( nt_exame, media_notas )
     if media_final >= 5:
         return True
