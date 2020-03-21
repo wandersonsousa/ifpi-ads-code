@@ -40,4 +40,3 @@ def pega_maior_e_menor(n1, n2, n3, n4, n5):
 
 
 main()
-# 5 2 4 5 10000
