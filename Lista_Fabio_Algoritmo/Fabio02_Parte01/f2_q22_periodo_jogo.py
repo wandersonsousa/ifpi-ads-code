@@ -29,7 +29,7 @@ def calcular_duracao(inicio_h, inicio_m, final_h, final_m):
 
     minutos_inicial_total = inicio_h * 60 + inicio_m
     minutos_final_total = final_h * 60 + final_m
-
+    
     if(inicio_h == final_h or inicio_h > final_h):
         print('Terminou no outro dia')
 
