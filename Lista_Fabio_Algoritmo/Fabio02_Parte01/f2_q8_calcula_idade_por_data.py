@@ -20,14 +20,9 @@ def calcular_idade_atual(ano_atual, mes_atual, dia_atual, ano_nasc, mes_nasc, di
     meses_nasc_total = ano_nasc * 12 + mes_nasc
 
     idade_ano = (meses_totais_atuais - meses_nasc_total) // 12
-    idade_mes = (meses_totais_atuais - meses_nasc_total) % 12
 
-    if dia_nasc < dia_atual:
-        idade_dia = dia_atual - dia_nasc
-    else:
-        idade_dia = dia_nasc - dia_atual
+    print(idade_ano)
 
-    print(f' {idade_ano} anos, {idade_mes} meses e {idade_dia} dias')
 
 
 main()
