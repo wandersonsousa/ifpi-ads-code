@@ -12,10 +12,13 @@ def main():
     y2 = int(input('Y >> ')) 
 
 
+    print( 'Área >> ',calcular_base(x1, y1, x2, y2) )
+
+
+def calcular_base(x1, y1, x2, y2):
     altura_retangulo = abs( y2 - y1 )
     base_retangulo = abs( x2 - x1 )
-
-    print( 'Área:', base_retangulo * altura_retangulo )
+    return base_retangulo * altura_retangulo
 
 
 main()
