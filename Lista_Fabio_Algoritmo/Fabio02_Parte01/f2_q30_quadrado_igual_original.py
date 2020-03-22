@@ -14,7 +14,6 @@ def main():
     else:
         print('\nNão atende a regra.')
 
-
 def atende_a_regra( n1, n2, n3, n4 ):
 
     numero_completo = digito_para_numero( n1, n2, n3, n4)
