@@ -20,10 +20,6 @@ def eh_quadrado_perfeito( n1, n2, n3, n4 ):
     primeiros_algarismos = digito_para_numero(n1, n2, '', '')
     ultimos_algarismos = digito_para_numero('', '', n3, n4)
 
-    print( primeiros_algarismos )
-    print(ultimos_algarismos)
-    print(numero_completo)
-
     return sqrt( numero_completo ) == (primeiros_algarismos + ultimos_algarismos)
 
 def digito_para_numero( n1 , n2 , n3, n4):
