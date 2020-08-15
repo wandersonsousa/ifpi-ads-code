@@ -56,6 +56,7 @@ function tabuadaSubtracaoDe( $n ){
 }
 
 $on = true;
+
 while ($on){
     showMenu();
     $escolha = pegarEscolhaDeTabuada();
@@ -107,7 +108,7 @@ function menuController($escolha){
             clearScreen();
             break;
         case 0:
-            $on = false;
+            breakApp();
             break;
         default:
             clearScreen();
@@ -115,7 +116,10 @@ function menuController($escolha){
             break;
     }
 }
-
+function breakApp(){
+    global $on;
+    $on = false;
+}
 function clearScreen(){
     if(PHP_OS === 'Linux')system('clear');
     else if(PHP_OS === 'Windows')system('cls');
