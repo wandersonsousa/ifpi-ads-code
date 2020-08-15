@@ -29,10 +29,4 @@ function eh_primo($n){
 }
 
 
-
-
-
-
-
-
 ?>
