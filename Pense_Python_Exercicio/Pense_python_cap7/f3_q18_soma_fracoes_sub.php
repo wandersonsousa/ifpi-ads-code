@@ -7,7 +7,12 @@ $S = 0;
 
 
 for ($i=1; $i <= $N; $i++) { 
-    if($i === 1)continue;
+    echo "i = $i \n";
+    if($i === 1){
+        $S = 1;
+        $i += 1;
+        continue;
+    }
 
     $S += $i / ($i - 1);
     echo "$i / ($i - 1) = $S \n ";
