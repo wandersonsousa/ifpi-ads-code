@@ -11,7 +11,7 @@ for ($i=1; $i <= $N; $i++) {
     if($i === 1){
         $S = 1 / $i;
         echo "1 / $i = $S\n";
-        ++$i;
+        --$i;
         continue;
     }
 
