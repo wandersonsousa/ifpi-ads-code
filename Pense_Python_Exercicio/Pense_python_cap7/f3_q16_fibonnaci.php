@@ -43,6 +43,4 @@ foreach ($listaFibonnaci as $fibNum) {
 
 
 
-
-
 ?>
