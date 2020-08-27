@@ -5,13 +5,12 @@
 
 $N = intval(readline('Valor de N: '));
 $maior = 0;
-$i=0;
-while ( $i < $N ) { 
+
+for ($i=0; $i < $N; $i++) { 
     $numeroAtual = intval(readline('Valor: '));
     if($i == 0) $maior = $numeroAtual;
     
     if( $numeroAtual > $N )$maior = $numeroAtual;
-    $i++
 }
 
 

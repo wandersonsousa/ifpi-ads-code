@@ -4,11 +4,10 @@
 
 $N = intval(readline('Valor de N: '));
 $S = 0;
-$i=1;
 
-while ($i <= $N) { 
+
+for ($i=1; $i <= $N; $i++) { 
     $S += 1 / $i;
-    $i++;
 }
 
 

@@ -3,10 +3,9 @@
 
 $N = intval(readline('Valor de N: '));
 $soma = 0;
-$i=0;
-while ( $i <= $N) { 
+
+for ($i=0; $i <= $N; $i++) { 
     $soma += $i;
-    $i++;
 }
 
 echo "Média : ". ($soma / ($N + 1) ) . "\n";

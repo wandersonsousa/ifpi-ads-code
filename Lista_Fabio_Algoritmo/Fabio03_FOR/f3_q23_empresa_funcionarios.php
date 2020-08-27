@@ -8,8 +8,7 @@ $N = intval(readline('Valor de N: '));
 $funcionarios = [];
 
 echo "\n \n \n";
-$i=1;
-while ($i <= $N) {
+for ($i=1; $i <= $N; $i++) {
     echo "---------------------------\n \n";
     echo "Ficha de número $i \n ";
     
@@ -36,7 +35,6 @@ while ($i <= $N) {
     ]);
 
     echo "\n \n";
-    $i++;
 }
 
 

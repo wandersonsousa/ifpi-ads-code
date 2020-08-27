@@ -5,18 +5,17 @@
 $N = intval(readline('Valor de N: '));
 $S = 0;
 
-$i=1;
-while ( $i <= $N) { 
+
+for ($i=1; $i <= $N; $i++) { 
     echo "i = $i \n";
     if($i === 1){
         $S = 1;
-        $i += 2;
+        $i += 1;
         continue;
     }
 
     $S += $i / ($i - 1);
     echo "$i / ($i - 1) = $S \n ";
-    $i++;
 }
 
 

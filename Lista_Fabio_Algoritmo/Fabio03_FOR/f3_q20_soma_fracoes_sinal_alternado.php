@@ -6,8 +6,8 @@
 $N = intval(readline('Valor de N: '));
 $S = 0;
 echo "\n";
-$i=1;
-while ( $i <= $N) {
+
+for ($i=1; $i <= $N; $i++) {
     if( eh_par($i) ){
         $S -= 1 / $i;
         echo "1 / $i\n ";
@@ -17,7 +17,6 @@ while ( $i <= $N) {
     }
 
     echo "\n";
-    $i++
 }
 
 function eh_par($n){

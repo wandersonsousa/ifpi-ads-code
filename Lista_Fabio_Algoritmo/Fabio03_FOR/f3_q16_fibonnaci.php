@@ -10,13 +10,11 @@ function listarFibonnaci( $n ){
     $n1 = 0;
     $n2 = 1;
     $valor;
-    $i=0;
-    while ($i < $n) { 
+    for ($i=0; $i < $n; $i++) { 
         $valor = $n1 + $n2;
         $n1 = $n2;
         $n2 = $valor;
         array_push($listaFibonnaci, $valor);
-        $i++;
     }
 }
 

@@ -18,12 +18,11 @@ for ($i=$limiteInferior; $i <= $limiteSuperior; $i++) {
 
 function eh_primo($n){
     if($n === 1)return false;
-    $i=1;
-    while ($i <= $n) { 
+
+    for ($i=1; $i <= $n ; $i++) { 
         if($n % $i === 0 && $i !== $n && $i !== 1){
             return false;
         }
-        $i++;
     }
 
     return true;

@@ -5,13 +5,13 @@
 $N = intval(readline('Valor de N: '));
 $S = 0;
 echo "\n";
-$i=1;
-while ( $i <= $N) {
+
+for ($i=1; $i <= $N; $i++) {
      
     if($i === 1){
         $S = 1 / $i;
         echo "1 / $i = $S\n";
-        $i -= 2;
+        --$i;
         continue;
     }
 
@@ -24,7 +24,6 @@ while ( $i <= $N) {
     }
 
     echo "\n";
-    $i++;
 }
 
 function eh_par($n){

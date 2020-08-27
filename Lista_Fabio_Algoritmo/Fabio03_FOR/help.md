@@ -1,0 +1,1 @@
+Para executar precisa ter instalado na máquina o interpretador do PHP, depois rode o código com o comando *PHP 'Código a ser executado'*

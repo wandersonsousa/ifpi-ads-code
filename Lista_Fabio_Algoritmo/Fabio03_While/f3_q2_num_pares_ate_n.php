@@ -4,8 +4,8 @@ $N = intval(readline('Digite N: '));
 
 $i = 0;
 while($i <= $N){
-    if($i % 2 === 0)echo "valor par => $i \n";
     $i++;
+    if($i % 2 === 0)echo "valor par => $i \n";
 }
 
 

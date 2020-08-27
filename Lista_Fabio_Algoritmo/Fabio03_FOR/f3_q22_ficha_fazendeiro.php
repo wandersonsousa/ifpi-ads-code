@@ -7,8 +7,7 @@ $N = intval(readline('Valor de N: '));
 $maisMagro = $maisGordo = $identificacaoGordo = $identificacaoMagro = null;
 
 echo "\n \n \n";
-$i=1;
-while ( $i <= $N) { 
+for ($i=1; $i <= $N; $i++) { 
     echo "---------------------------\n \n";
     echo "Ficha de número $i \n ";
     
@@ -31,7 +30,6 @@ while ( $i <= $N) {
         $maisMagro = $peso;
         $identificacaoMagro = $nome;
     }
-    $i++;
 }
 
 echo "Boi mais gordo => $identificacaoGordo, peso => $maisGordo \n";
