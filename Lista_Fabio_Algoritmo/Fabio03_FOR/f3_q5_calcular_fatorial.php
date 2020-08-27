@@ -11,10 +11,8 @@ function pegarFatorial($n){
     if( $n === 0 )return 1;
 
     $fatorial = 1;
-    $i = $n;
-    while ($i >= 1) { 
+    for ($i=$n; $i >= 1; $i--) { 
         $fatorial *= $i;
-        $i--;
     }
     return $fatorial;
 }

@@ -35,31 +35,23 @@ function tabuadaDe( $tipoTabuada ){
 
 
 function tabuadaMultDe( $n ){
-    $i = 1;
-    while($i <= 10){
+    for ($i=1; $i <= 10; $i++) {
         echo "$i x $n = " . ($n * $i) . "\n";
-        $i++;
     }
 }
 function tabuadaDivDe( $n ){
-    $i = 1;
-    while ($i <= 10) {
+    for ($i=1; $i <= 10; $i++) {
         echo "$i / $n = " . number_format( ($n / $i), 2 ) . "\n";
-        $i++;
     }
 }
 function tabuadaSomaDe( $n ){
-    $i = 1;
-    while ($i <= 10) {
+    for ($i=1; $i <= 10; $i++) {
         echo "$i + $n = " . ($n + $i) . "\n";
-        $i++;
     }
 }
 function tabuadaSubtracaoDe( $n ){
-    $i=1;
-    while ( $i <= 10) {
+    for ($i=1; $i <= 10; $i++) {
         echo "$i - $n = " . ($i - $n) . "\n";
-        $i++;
     }
 }
 

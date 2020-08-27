@@ -8,10 +8,9 @@ $limite = intval(readline('Digite o limite: '));
 function pegarValorDePA($a1, $r, $n ){
     return $a1 + ($n-1) * $r;
 }
-$i = 1;
-while($i <= $limite) { 
+
+for ($i=1; $i <= $limite; $i++) { 
     echo "valor de posição $i equivale à: ". pegarValorDePa($A0, $R, $i) . "\n";
-    $i++;
 }
 
 ?>
