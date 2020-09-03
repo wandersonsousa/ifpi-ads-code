@@ -2,19 +2,29 @@
 
 
 function rotateWorld( string $str, int $rotationTimes ) : string {
-    if( !isValidString( $str ) )throw new Exception("Invalid String", 1);
+    define('Alphabet', range('a', 'z') );
 
     $letters = getLettersFrom($str);
-
     $rotateString = "";
 
     foreach($letters as $letter){
-        $codeOfLetter = ord($letter);
+        if( ctype_alpha($letter) ){
+            $codeOfLetter = array_search($letter, Alphabet);
+            if( $codeOfLetter + $rotationTimes >  25){
+                $codeOfLetter = ( $codeOfLetter + $rotationTimes ) - 26;                 
+            }
+            elseif( $codeOfLetter + $rotationTimes < 0){
+                $codeOfLetter = ( $codeOfLetter + 26 ) + $rotationTimes;
+            }          
+            else{
+                $codeOfLetter += $rotationTimes;
+            }
+        }else {
+            $rotateString .= $letter;
+            continue;
+        }
         
-        
-        $codeOfLetter = handleCode(  $codeOfLetter, $rotationTimes );
-        
-        $rotateLetter = chr( $codeOfLetter );
+        $rotateLetter = Alphabet[ $codeOfLetter ];
         $rotateString .= $rotateLetter;
     }
 
@@ -22,30 +32,16 @@ function rotateWorld( string $str, int $rotationTimes ) : string {
 }
 
 
-function isValidString( $str ): bool{
-    if( intval($str) )return false;
-    return true;
-}
+
+
+
 
 function getLettersFrom( $str ) : array{
     return str_split( strtolower( trim($str) ) );
 }
 
-function handleCode( $codeOfLetter, $rotationTimes ) : int {
-    if( $codeOfLetter + $rotationTimes > 122 ){
-        return $codeOfLetter = 96 + $rotationTimes;
-    } 
 
-    if( $codeOfLetter + $rotationTimes < 97 ){
-        return $codeOfLetter = 122 - $rotationTimes;
-    }
-    
-    return $codeOfLetter = $codeOfLetter + $rotationTimes;
-}
-
-
-
-echo rotateWorld('a', 1) . "\n";
+echo rotateWorld('a', -1 ) . "\n";
 
 
 
