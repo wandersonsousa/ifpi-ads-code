@@ -44,9 +44,22 @@ def showTypeNumbers( array ):
         else:
             print('{} é negativo'.format(n))
 
-    
+def mediaNumbersIn( array ):
+    media = 0
+    for n in array:
+        media += n
+    return media / len(array)
+
+
 
 showTypeNumbers( array )
+
 array = parseNumbersInArray(array)
+
 print('-+' * 40)
+
 showTypeNumbers( array )
+
+print('-+' * 40)
+
+print('média ->', mediaNumbersIn(array) )
