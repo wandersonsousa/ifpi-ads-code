@@ -1,7 +1,8 @@
 # Leia um vetor A com N elementos, verifique e escreva se existem ou não elementos iguais no vetor.
 
-A = [1,2,4,5,6,7,8,9,10, 11]
-
+N = int(input('N: '))
+A = []
+for i in range(N):A.append( int( input('Valor: ') ) )
 
 def hasEqual( array ):
     for element in A:
