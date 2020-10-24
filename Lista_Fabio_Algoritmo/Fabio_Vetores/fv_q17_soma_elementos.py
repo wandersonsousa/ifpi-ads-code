@@ -8,9 +8,6 @@ for i in range(N):
     for j in range(N):
         matriz[i].append( int( input('Valor: ') ) )
 
-
-
-
 def maior_linha_em( matriz ):
     maior_linha = 0
     maior_soma = sum(matriz[maior_linha])
