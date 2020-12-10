@@ -13,3 +13,5 @@ O operador de comparação IF e o conectivo lógico AND retornam um boolean fals
 4)
 A saída será o valor de op(1), pois a premissa case 1 do switch é verdadeira.
 
+9) 
+Acredito ser a da 7 e 8 questão são as mais estruturadas,mais orientadas a poo e modularizada.
