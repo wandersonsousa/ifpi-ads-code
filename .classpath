@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="IFPI_POO_Ex02/src"/>
+	<classpathentry kind="src" path="POO_Ex_02"/>
+	<classpathentry kind="output" path="IFPI_POO_Ex02/bin"/>
+</classpath>
