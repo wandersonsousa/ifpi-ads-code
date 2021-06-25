@@ -2,23 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-p_grafo le_grafo()
-{
-    int n, m, i, u, v;
-    p_grafo g;
-    printf("n m\n");
-    scanf("%d %d", &n, &m);
-    g = criar_grafo(n);
-    printf("u v\n");
-    for (i = 0; i < m; i++)
-    {
-        scanf("%d %d", &u, &v);
-        insere_aresta(g, u, v);
-    }
-    return g;
-}
-
-p_grafo criar_grafo(int n)
+p_grafo criar_digrafo(int n)
 {
     int i, j;
     p_grafo g = malloc(sizeof(Grafo));
@@ -34,10 +18,30 @@ p_grafo criar_grafo(int n)
     return g;
 }
 
+p_grafo le_grafo()
+{
+    int n, m, i, u, v;
+    p_grafo g;
+    printf("n m\n");
+    scanf("%d %d", &n, &m);
+    g = criar_digrafo(n);
+    printf("u v\n");
+    for (i = 0; i < m; i++)
+    {
+        scanf("%d %d", &u, &v);
+        insere_aresta(g, u, v);
+    }
+    return g;
+}
+
+
 void insere_aresta(p_grafo g, int u, int v)
 {
     g->adjacencia[u][v] = 1;
-    g->adjacencia[v][u] = 1;
+}
+void remove_aresta(p_grafo g, int u, int v)
+{
+    g->adjacencia[u][v] = 0;
 }
 void destroi_grafo(p_grafo g)
 {
@@ -47,15 +51,12 @@ void destroi_grafo(p_grafo g)
     free(g->adjacencia);
     free(g);
 }
-void remove_aresta(p_grafo g, int u, int v)
-{
-    g->adjacencia[u][v] = 0;
-    g->adjacencia[v][u] = 0;
-}
+
 int tem_aresta(p_grafo g, int u, int v)
 {
     return g->adjacencia[u][v];
 }
+
 int mais_popular(p_grafo g)
 {
     int greater = 0, current_grau = grau(g, greater), max = current_grau;
