@@ -5,6 +5,7 @@ Basic implementation of a Graph representation of an adjacency matrix.
 ## 🤔 To-do
 
 * [x] Basic graph representation
+* [x] List adjacency graph representation
 
 ## Contributions welcome
 
