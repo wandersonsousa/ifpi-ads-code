@@ -3,13 +3,21 @@
 int main(int argc, char const *argv[])
 {
     p_grafo meuGrafo = criar_grafo(4);
+
+    // printf("%p \n", meuGrafo->adjacencia[1]);
+
+    //insere_aresta(meuGrafo, 1, 0);
+    //insere_aresta(meuGrafo, 1, 2);
+
+    //printf("%p \n", meuGrafo->adjacencia[1]);
+    printf("Listando vertices...\n");
+    for (int i = 0; i < meuGrafo->n; i++)
+    {
+        printf("Vertice: %d\n", meuGrafo->adjacencia[i]->v);
+        libera_lista( meuGrafo->adjacencia[i] );
+    }
+
     
-    printf("%p \n", meuGrafo->adjacencia[1]);
-
-    insere_aresta(meuGrafo, 1, 0);
-    insere_aresta(meuGrafo, 1, 2);
-
-    printf("%p \n", meuGrafo->adjacencia[1]);
 
     /*insere_aresta(meuGrafo, 0, 1);
     insere_aresta(meuGrafo, 0, 2);
