@@ -1,0 +1,3 @@
+# Quizur
+
+Este projeto contém melhorias nas nomeclaturas das variáveis, e principalmente na estruturação dos arquivos pra facilitar o implementação dos conceitos SOLID, funções que estavam soltas no código foram adicionadas ao diretório "helpers", removido variáveis que não deviam ser globais, tudo que poderia ser escopado dentro das funções ou classes que o alteram, foram corrigidos, nenhuma função deve alterar uma variável global, pois pode gerar inconsistências.
