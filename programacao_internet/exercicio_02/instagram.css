@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf9f9;
+}
+.container {
+  margin: 8px 128px;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feed-item {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 16px;
+}
+.feed-image {
+  height: 300px;
+  background-image: url(./feed-image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.feed-navbar {
+  display: flex;
+  justify-content: space-around;
+}
